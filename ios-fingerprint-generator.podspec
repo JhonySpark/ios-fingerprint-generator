@@ -16,18 +16,17 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ios-fingerprint-generator"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of ios-fingerprint-generator."
+  spec.version      = "1.0.0"
+  spec.summary      = "The ios-fingerprint-generator was made to get device fingerprint from CyberSource SDK."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "The ios-fingerprint-generator was made to get device fingerprint from CyberSource SDK."
 
-  spec.homepage     = "http://EXAMPLE/ios-fingerprint-generator"
+  spec.homepage     = "https://github.com/JhonySpark/ios-fingerprint-generator"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +37,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "MIT" }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ios-fingerprint-generator.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/JhonySpark/ios-fingerprint-generator.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
