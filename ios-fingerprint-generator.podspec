@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ios-fingerprint-generator"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "The ios-fingerprint-generator was made to get device fingerprint from CyberSource SDK."
 
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "The ios-fingerprint-generator was made to get device fingerprint from CyberSource SDK."
+  spec.description  = "Generate device fingerprint to make secure transactions"
 
   spec.homepage     = "https://github.com/JhonySpark/ios-fingerprint-generator"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
