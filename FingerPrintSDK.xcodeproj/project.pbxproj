@@ -11,9 +11,9 @@
 		D6360349269FDF6100DDD24B /* FingerPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = D6360347269FDF6100DDD24B /* FingerPrint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D636034A269FDF6100DDD24B /* FingerPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = D6360348269FDF6100DDD24B /* FingerPrint.m */; };
 		D6360361269FE6DC00DDD24B /* TMXProfiling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D636034C269FE0AF00DDD24B /* TMXProfiling.framework */; };
-		D6360362269FE6DC00DDD24B /* TMXProfiling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D636034C269FE0AF00DDD24B /* TMXProfiling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6360362269FE6DC00DDD24B /* TMXProfiling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D636034C269FE0AF00DDD24B /* TMXProfiling.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6360364269FE6DD00DDD24B /* TMXProfilingConnections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D636034E269FE0B900DDD24B /* TMXProfilingConnections.framework */; };
-		D6360365269FE6DD00DDD24B /* TMXProfilingConnections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D636034E269FE0B900DDD24B /* TMXProfilingConnections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6360365269FE6DD00DDD24B /* TMXProfilingConnections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D636034E269FE0B900DDD24B /* TMXProfilingConnections.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
