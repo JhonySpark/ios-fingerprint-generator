@@ -8,12 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		D6360341269FDEF700DDD24B /* FingerPrintSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D636033F269FDEF700DDD24B /* FingerPrintSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6360349269FDF6100DDD24B /* FingerPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = D6360347269FDF6100DDD24B /* FingerPrint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D636034A269FDF6100DDD24B /* FingerPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = D6360348269FDF6100DDD24B /* FingerPrint.m */; };
+		D6360361269FE6DC00DDD24B /* TMXProfiling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D636034C269FE0AF00DDD24B /* TMXProfiling.framework */; };
+		D6360362269FE6DC00DDD24B /* TMXProfiling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D636034C269FE0AF00DDD24B /* TMXProfiling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6360364269FE6DD00DDD24B /* TMXProfilingConnections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D636034E269FE0B900DDD24B /* TMXProfilingConnections.framework */; };
+		D6360365269FE6DD00DDD24B /* TMXProfilingConnections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D636034E269FE0B900DDD24B /* TMXProfilingConnections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6360363269FE6DC00DDD24B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D6360362269FE6DC00DDD24B /* TMXProfiling.framework in Embed Frameworks */,
+				D6360365269FE6DD00DDD24B /* TMXProfilingConnections.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D636033C269FDEF700DDD24B /* FingerPrintSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FingerPrintSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D636033F269FDEF700DDD24B /* FingerPrintSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FingerPrintSDK.h; sourceTree = "<group>"; };
 		D6360340269FDEF700DDD24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6360347269FDF6100DDD24B /* FingerPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FingerPrint.h; sourceTree = "<group>"; };
+		D6360348269FDF6100DDD24B /* FingerPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FingerPrint.m; sourceTree = "<group>"; };
+		D636034C269FE0AF00DDD24B /* TMXProfiling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TMXProfiling.framework; sourceTree = "<group>"; };
+		D636034E269FE0B900DDD24B /* TMXProfilingConnections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TMXProfilingConnections.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6360361269FE6DC00DDD24B /* TMXProfiling.framework in Frameworks */,
+				D6360364269FE6DD00DDD24B /* TMXProfilingConnections.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +59,7 @@
 			children = (
 				D636033E269FDEF700DDD24B /* FingerPrintSDK */,
 				D636033D269FDEF700DDD24B /* Products */,
+				D636034B269FE0AF00DDD24B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +76,19 @@
 			children = (
 				D636033F269FDEF700DDD24B /* FingerPrintSDK.h */,
 				D6360340269FDEF700DDD24B /* Info.plist */,
+				D6360347269FDF6100DDD24B /* FingerPrint.h */,
+				D6360348269FDF6100DDD24B /* FingerPrint.m */,
 			);
 			path = FingerPrintSDK;
+			sourceTree = "<group>";
+		};
+		D636034B269FE0AF00DDD24B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D636034E269FE0B900DDD24B /* TMXProfilingConnections.framework */,
+				D636034C269FE0AF00DDD24B /* TMXProfiling.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6360341269FDEF700DDD24B /* FingerPrintSDK.h in Headers */,
+				D6360349269FDF6100DDD24B /* FingerPrint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +114,7 @@
 				D6360338269FDEF700DDD24B /* Sources */,
 				D6360339269FDEF700DDD24B /* Frameworks */,
 				D636033A269FDEF700DDD24B /* Resources */,
+				D6360363269FE6DC00DDD24B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D636034A269FDF6100DDD24B /* FingerPrint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +303,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FingerPrintSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -283,6 +329,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FingerPrintSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
