@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
   spec.platform     =  :ios, "9.0"
   spec.name         = "ios-fingerprint-generator"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "The ios-fingerprint-generator was made to get device fingerprint from CyberSource SDK."
 
   # This description is used to generate tags and improve search results.
