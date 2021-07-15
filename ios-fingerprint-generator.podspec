@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-
+  spec.platform     =  :ios, "9.0"
   spec.name         = "ios-fingerprint-generator"
   spec.version      = "1.0.4"
   spec.summary      = "The ios-fingerprint-generator was made to get device fingerprint from CyberSource SDK."
@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source  = { :http => 'file:' + __dir__ + "/" }
+  spec.source_files = 'FingerPrintSDK/**/*'
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
