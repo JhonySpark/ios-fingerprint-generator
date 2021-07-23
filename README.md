@@ -1,66 +1,19 @@
 # IOS Cybersource Device Fingerprint
+## IOS - Nativo 
 
-## Getting started
+### Getting started
 
-`$ yarn add https://github.com/JhonySpark/react-native-fingerprint-genrator`
+1. Download the framework file. [download](https://drive.google.com/drive/folders/11RD6pt0zkMfnfmh6tYV3JCHLTNAKSX8s?usp=sharing)
+2. Put the file in the root of your IOS project
+3. Declare the frameworks on your `target -> General -> Frameworks, Library, and Embedded Content`
+	- Click add other -> add files -> `select FingerPrintSDK.framework at the root of project`
 
-### Manual installation
-
-
-#### iOS
-
-NOTE: if you're using RN 0.60+ you can autolinking, ignore step 1.
-
-1. Add pod 'RNCybersourceDeviceFingerprint', :path => '../node_modules/react-native-fingerprint-genrator/ios' to your Podfile
-2. Run pod install from ios folder
-3. Run your project (`Cmd+R`)<
-
-#### Android
-
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import br.com.atev.rn-fingerprint-generator.RNCybersourceDeviceFingerprintPackage;` to the imports at the top of the file
-  - Add private static Application _application;
-  - Add in onCreate() _application = this;
-  - Add `new RNCybersourceDeviceFingerprintPackage(_application)` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-fingerprint-genrator'
-  	project(':react-native-fingerprint-genrator').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-fingerprint-genrator/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      implementation project(':react-native-fingerprint-genrator')
-  	```
-
-
-## Usage
+### Usage
 ```javascript
-import RNCybersourceDeviceFingerprint from 'react-native-fingerprint-genrator'
+// IMPORT THE FRAMEWORK
+#import <FingerPrintSDK/FingerPrintSDK.h>
 
-// INITIALIZE THE SDK
-await RNCybersourceDeviceFingerprint.configure(ORG_ID);
-
-OR
-
-RNCybersourceDeviceFingerprint.configure(ORG_ID).then( () => {
-	console.log('THE CYBERSOURCE SKD INITIALIZED')
-})
-.catch(err => {
-	console.log('SOMETHING WENT WRONG!  ', err)
-})
-
-================================================================ 
-// GET SESSION ID
-// Obs: getSession accepts custom attributes for session, check the Cybersource SDK documentation
-const { sessionId } = await RNCybersourceDeviceFingerprint.getSessionID([]);
-
-OR 
-
-RNCybersourceDeviceFingerprint.getSessionID([]).then( (obj) => {
-	console.log(`The session id is ${obj.sessionId}`)
-})
-.catch(err => {
-	console.log('ERROR ON GET SESSION ID ', err)
-})
+// GET SESSION ID ( Param: debug: YES or NOT)
+NSString * sessionID = [FingerPrint getSessionId:true];
 
 ```
